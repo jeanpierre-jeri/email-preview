@@ -1,13 +1,13 @@
 import { writeFile, mkdir } from 'node:fs/promises'
 
 export const generateFile = async (html: string, route: string[]) => {
-  let imagePath = 'public/img'
+  let imagePath = 'public/static'
 
   route.forEach(() => {
     imagePath = '../' + imagePath
   })
 
-  const data = html.replaceAll('/img', imagePath)
+  const data = html.replaceAll("'/static", imagePath)
 
   const fileName = route.pop()
   const fileRoute = route.join('/') + '/'
