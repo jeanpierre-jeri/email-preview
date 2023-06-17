@@ -35,7 +35,7 @@ export function GenerateButton({ html, route }: { html: string; route: string[] 
     <button
       onClick={generateFile}
       disabled={loading}
-      className='fixed top-4 right-4 bg-blue-500 rounded-xl px-4 py-3 font-bold hover:bg-blue-600 transition-colors disabled:opacity-50'
+      className='fixed top-5 right-10 bg-blue-500 rounded-xl px-4 py-3 font-bold hover:bg-blue-600 transition-colors disabled:opacity-50'
     >
       Generar HTML
     </button>
